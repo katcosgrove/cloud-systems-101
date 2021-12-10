@@ -10,7 +10,7 @@ web_bucket = s3.Bucket('s3-website-bucket',
         index_document="index.html",
     ))
 
-content_dir = "static"
+content_dir = "website"
 for file in os.listdir(content_dir):
     filepath = os.path.join(content_dir, file)
     mime_type, _ = mimetypes.guess_type(filepath)

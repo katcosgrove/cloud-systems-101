@@ -1,4 +1,4 @@
-name: flask-ec2
+name: static-site-s3
 runtime:
   name: python
   options:
