@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>Hello world!</title>
+	<link rel="stylesheet" href={{ url_for('static', filename='style.css') }}>
+	<link rel="stylesheet" href={{ url_for('static', filename='normalize.css') }}>
+</head>
+<body>
+	<header>
+		<div class="logo"><i class="fas fa-cat"></i></div>
+		<nav>
+                <ul>
+                    <li {% if request.path == url_for('home') %} class="active" {% endif %}>
+                        <a href="{{ url_for('home') }}">Home</a>
+                    </li>
+                    <li {% if request.path == url_for('about') %} class="active" {% endif %}>
+                        <a href="{{ url_for('about') }}">About</a>
+                    </li>
+                    <li {% if request.path == url_for('portfolio') %} class="active" {% endif %}>
+                        <a href="{{ url_for('portfolio') }}">Portfolio</a>
+                    </li>
+                </ul>
+            </nav>
+		<ul class="social">
+                <li><a href="http://github.com/katcosgrove" target="_blank"><i class="fab fa-github-alt"></i></a></li>
+                <li><a href="http://twitter.com/Dixie3Flatline" target="_blank"><i class="fab fa-twitter"></i></a></li>
+                <li><a href="http://linkedin.com/in/katcosgrove" target="_blank"><i class="fab fa-linkedin-in"></i></a></li>
+            </ul>
+	</header>
+{% block content %}{% endblock %}
+</body>
+<script src="https://kit.fontawesome.com/b4747495ea.js" crossorigin="anonymous"></script>
+</html>
