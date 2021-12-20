@@ -4,7 +4,7 @@ import pulumi
 import pulumi_aws as aws
 import pulumi_docker as docker
 
-# The ECS cluster in which our application and databse will run
+# The ECS cluster in which our application will run
 app_cluster = aws.ecs.Cluster("app-cluster")
 
 # Creating a VPC and a public subnet
@@ -179,7 +179,7 @@ flask_task_definition = aws.ecs.TaskDefinition("flask-task-definition",
         }],
     }])))
 
-# Launching our Redis service on Fargate, using our configurations and load balancers
+# Launching our Flask service on Fargate, using our configurations and load balancers
 flask_service = aws.ecs.Service("flask-service",
 	cluster=app_cluster.arn,
     desired_count=1,
