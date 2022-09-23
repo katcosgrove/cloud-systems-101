@@ -1,0 +1,7 @@
+INSERT INTO 
+talks (title, abstract)
+VALUES 
+('Lorem ipsum dolor sit amet','consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Tincidunt lobortis feugiat vivamus at augue. Tempor nec feugiat nisl pretium. Eget nunc lobortis mattis aliquam faucibus. '),
+('Lorem ipsum dolor sit amet','consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Tincidunt lobortis feugiat vivamus at augue. Tempor nec feugiat nisl pretium. Eget nunc lobortis mattis aliquam faucibus. '),
+('Lorem ipsum dolor sit amet','consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Tincidunt lobortis feugiat vivamus at augue. Tempor nec feugiat nisl pretium. Eget nunc lobortis mattis aliquam faucibus. '),
+('Lorem ipsum dolor sit amet','consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Tincidunt lobortis feugiat vivamus at augue. Tempor nec feugiat nisl pretium. Eget nunc lobortis mattis aliquam faucibus. ');
